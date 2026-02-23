@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Benessere di Gaia</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffe4e1;
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 19s-5-4-5-8c0-2.2 1.5-3.8 3.8-3.8 1.3 0 2.2 0.9 2.4 1.9 0.2-1 1.1-1.9 2.4-1.9 2.3 0 3.8 1.6 3.8 3.8 0 4-5 8-5 8z' fill='%23c2185b'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+            background-size: 120px 120px;
+        }
+        header {
+            background: #c2185b;
+            color: #fff;
+            padding: 40px 0 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background: #c2185b;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 700;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffd600;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            padding: 30px;
+        }
+        h2 {
+            color: #c2185b;
+            margin-top: 0;
+        }
+        .service h3 {
+            color: #c2185b;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .service {
+            flex: 1 1 300px;
+            background: #e0f2f1;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+        footer {
+            background: #c2185b;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        @media (max-width: 700px) {
+            .services {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-style: italic;">Centro Benessere di Gaia</h1>
+        <p>Il tuo punto di riferimento per salute, bellezza e benessere</p>
+    </header>
+    <nav>
+        <a href="#chi-siamo">Chi siamo</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#contatti">Contatti</a>
+    </nav>
+    <div class="container">
+        <section id="chi-siamo">
+            <h2>Chi siamo</h2>
+            <p>Il Centro Benessere Biomed offre trattamenti innovativi per la cura della persona, combinando professionalità, esperienza e tecnologie all'avanguardia. Il nostro team è composto da esperti nel settore della salute e della bellezza, pronti ad accoglierti in un ambiente rilassante e confortevole.</p>
+        </section>
+        <section id="servizi">
+            <h2>Servizi</h2>
+            <div class="services">
+                <div class="service">
+                    <img src="https://images.unsplash.com/photo-1506744038136-462fa3a6c2a8?auto=format&fit=crop&w=400&q=80" alt="Estetica avanzata" style="width:100%;max-width:200px;border-radius:8px;margin-bottom:10px;display:block;margin-left:auto;margin-right:auto;">
+                    <h3>Estetica avanzata</h3>
+                    <p>Trattamenti viso e corpo, epilazione laser, peeling, radiofrequenza e molto altro per valorizzare la tua bellezza.</p>
+                </div>
+                <div class="service">
+                    <img src="benessere.jpg" alt="Benessere" style="width:100%;max-width:200px;border-radius:8px;margin-bottom:10px;display:block;margin-left:auto;margin-right:auto;">
+                    <h3>Benessere</h3>
+                    <p>Massaggi rilassanti, trattamenti anti-stress, percorsi personalizzati per il tuo equilibrio psicofisico.</p>
+                </div>
+                <div class="service">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f3b43?auto=format&fit=crop&w=400&q=80" alt="Salute" style="width:100%;max-width:200px;border-radius:8px;margin-bottom:10px;display:block;margin-left:auto;margin-right:auto;">
+                    <h3>Salute</h3>
+                    <p>Consulenze nutrizionali, check-up, trattamenti per il dimagrimento e la prevenzione.</p>
+                </div>
+                <div class="service">
+                    <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c1a?auto=format&fit=crop&w=400&q=80" alt="Unghie" style="width:100%;max-width:200px;border-radius:8px;margin-bottom:10px;display:block;margin-left:auto;margin-right:auto;">
+                    <h3>Unghie</h3>
+                    <p>Manicure, pedicure, ricostruzione unghie, nail art e trattamenti specifici per la cura delle mani e dei piedi.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contatti">
+            <h2>Contatti</h2>
+            <p>Via Roma 123, 00100 Roma</p>
+            <p>Email: info@centrobenesseregaia.it</p>
+            <p>Telefono: 06 1234567</p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2026 Centro Benessere di Gaia. Tutti i diritti riservati.
+    </footer>
+</body>
+</html>
